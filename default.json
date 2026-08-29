@@ -4,6 +4,7 @@
 	"timezone": "Europe/Athens",
 	"schedule": ["* 12 * * 0"],
 	"dependencyDashboard": true,
+	"rangeStrategy": "bump",
 	"ignoreDeps": ["lucide-react"],
 	"packageRules": [
 		{
