@@ -5,24 +5,24 @@
 	"schedule": ["* 12 * * 0"],
 	"dependencyDashboard": true,
 	"rangeStrategy": "bump",
-	"ignoreDeps": ["lucide-react"],
 	"packageRules": [
-		{
-			"matchDepTypes": ["packageManager"],
-			"enabled": false
-		},
-		{
-			"matchUpdateTypes": ["patch", "minor"],
-			"automerge": true
-		},
 		{
 			"matchUpdateTypes": ["major"],
 			"automerge": false
+		},
+		{
+			"matchUpdateTypes": ["minor", "patch"],
+			"automerge": true
+		},
+		{
+			"matchDepTypes": ["packageManager"],
+			"enabled": false
 		}
 	],
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true,
 		"schedule": ["* 12 * * 0"]
-	}
+	},
+	"ignoreDeps": ["lucide-react"]
 }
