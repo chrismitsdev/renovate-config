@@ -1,0 +1,30 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:recommended"],
+	"timezone": "Europe/Athens",
+	"schedule": ["before 6am on monday"],
+	"dependencyDashboard": true,
+	"ignoreDeps": ["lucide-react"],
+	"packageRules": [
+		{
+			"matchDepTypes": ["packageManager"],
+			"enabled": false
+		},
+		{
+			"matchPackagePatterns": ["^next"],
+			"groupName": "Next.js"
+		},
+		{
+			"matchPackagePatterns": ["^react", "^react-dom", "^@types/react"],
+			"groupName": "React"
+		},
+		{
+			"matchUpdateTypes": ["patch", "minor"],
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["major"],
+			"automerge": false
+		}
+	]
+}
