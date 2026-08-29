@@ -2,7 +2,7 @@
 
 Shared Renovate configuration for all personal projects.
 
-Repos extend this via:
+Repos can extend this config via:
 ```json
 {
   "extends": ["github>chrismitsdev/renovate-config"]
