@@ -2,8 +2,9 @@
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:recommended"],
 	"timezone": "Europe/Athens",
-	"schedule": ["* 12 * * 0"],
+	"schedule": ["* 12-15 * * 0"],
 	"dependencyDashboard": true,
+	"minimumReleaseAge": "3 days",
 	"rangeStrategy": "bump",
 	"packageRules": [
 		{
@@ -22,7 +23,7 @@
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true,
-		"schedule": ["* 12 * * 0"]
+		"schedule": ["* 12-15 * * 0"]
 	},
 	"ignoreDeps": ["lucide-react"]
 }
