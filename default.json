@@ -9,20 +9,24 @@
 	"platformAutomerge": true,
 	"packageRules": [
 		{
+			"description": "Hold major updates for manual review",
 			"matchUpdateTypes": ["major"],
 			"automerge": false
 		},
 		{
+			"description": "Automerge non-major updates",
 			"matchUpdateTypes": ["minor", "patch"],
 			"automerge": true
 		},
 		{
+			"description": "Freeze the packageManager field (pnpm version pin)",
 			"matchDepTypes": ["packageManager"],
 			"enabled": false
 		}
 	],
 	"lockFileMaintenance": {
 		"enabled": true,
+		"recreateWhen": "always",
 		"automerge": true,
 		"schedule": ["* * * * 0,6"],
 		"minimumReleaseAge": "3 days",
