@@ -33,6 +33,5 @@
 		"configValidation": "always",
 		"mergeConfidence": "always",
 		"minimumReleaseAge": "always"
-	},
-	"ignoreDeps": ["lucide-react"]
+	}
 }
