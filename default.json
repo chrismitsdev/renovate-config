@@ -1,18 +1,12 @@
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": ["config:recommended"],
+	"dependencyDashboard": true,
 	"timezone": "Europe/Athens",
 	"schedule": ["* * * * 0,6"],
-	"dependencyDashboard": true,
 	"minimumReleaseAge": "3 days",
 	"rangeStrategy": "bump",
 	"platformAutomerge": true,
-	"statusCheckWhen": {
-		"artifactError": "always",
-		"configValidation": "always",
-		"mergeConfidence": "always",
-		"minimumReleaseAge": "always"
-	},
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["major"],
@@ -30,7 +24,15 @@
 	"lockFileMaintenance": {
 		"enabled": true,
 		"automerge": true,
-		"minimumReleaseAge": null
+		"schedule": ["* * * * 0,6"],
+		"minimumReleaseAge": "3 days",
+		"minimumReleaseAgeBehaviour": "timestamp-optional"
+	},
+	"statusCheckWhen": {
+		"artifactError": "always",
+		"configValidation": "always",
+		"mergeConfidence": "always",
+		"minimumReleaseAge": "always"
 	},
 	"ignoreDeps": ["lucide-react"]
 }
