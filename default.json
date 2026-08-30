@@ -6,6 +6,13 @@
 	"dependencyDashboard": true,
 	"minimumReleaseAge": "3 days",
 	"rangeStrategy": "bump",
+	"platformAutomerge": true,
+	"statusCheckWhen": {
+		"artifactError": "always",
+		"configValidation": "always",
+		"mergeConfidence": "always",
+		"minimumReleaseAge": "always"
+	},
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["major"],
