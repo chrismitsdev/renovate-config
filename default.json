@@ -24,14 +24,6 @@
 			"enabled": false
 		}
 	],
-	"lockFileMaintenance": {
-		"enabled": true,
-		"recreateWhen": "always",
-		"automerge": true,
-		"schedule": ["* * * * 0,6"],
-		"minimumReleaseAge": "3 days",
-		"minimumReleaseAgeBehaviour": "timestamp-optional"
-	},
 	"statusCheckWhen": {
 		"artifactError": "always",
 		"configValidation": "always",
