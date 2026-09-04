@@ -7,7 +7,7 @@
 	"minimumReleaseAge": "3 days",
 	"rangeStrategy": "bump",
 	"platformAutomerge": true,
-	"prHourlyLimit": 2,
+	"prHourlyLimit": 4,
 	"prConcurrentLimit": 10,
 	"packageRules": [
 		{
